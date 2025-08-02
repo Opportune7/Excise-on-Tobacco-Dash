@@ -1,0 +1,384 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nigeria's 'Sin Tax' Story: The Detailed Trends</title>
+    <!-- Inter font for clean, modern typography -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;800;900&display=swap">
+    <!-- Tailwind CSS for a fully responsive and clean design -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: #f7f9fc;
+        }
+        .container {
+            max-width: 1280px;
+        }
+        .section-header {
+            border-bottom: 2px solid #e2e8f0;
+            padding-bottom: 1.5rem;
+            margin-bottom: 2.5rem;
+        }
+        .data-card {
+            background-color: #ffffff;
+            border-radius: 1.5rem;
+            box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05);
+            transition: transform 0.2s ease-in-out;
+            border: 1px solid #e2e8f0;
+        }
+        .data-card:hover {
+            transform: translateY(-5px);
+        }
+        .tax-bar-container {
+            width: 100%;
+            height: 1.5rem;
+            background-color: #e5e7eb;
+            border-radius: 9999px;
+            overflow: hidden;
+            margin-top: 0.5rem;
+        }
+        .tax-bar-fill-blue {
+            height: 100%;
+            background-color: #1e40af;
+            border-radius: 9999px;
+        }
+        .tax-bar-fill-green {
+            height: 100%;
+            background-color: #059669;
+            border-radius: 9999px;
+        }
+        .table-container {
+            overflow-x: auto;
+        }
+    </style>
+</head>
+<body class="p-4 md:p-8">
+
+    <!-- Main container for the entire infographic -->
+    <div class="container mx-auto p-6 md:p-10 lg:p-16 bg-gray-50 rounded-3xl shadow-2xl">
+
+        <!-- Header Section -->
+        <header class="text-center mb-10 md:mb-16">
+            <h1 class="text-4xl md:text-5xl lg:text-6xl font-black text-gray-900 leading-tight">
+                Nigeria's 'Sin Tax' Story
+            </h1>
+            <p class="mt-4 text-lg md:text-xl text-gray-600">
+                A Detailed Dashboard of Revenue and Policy Trends
+            </p>
+        </header>
+
+        <!-- --- Section 1: Introduction and The Big Picture --- -->
+        <section class="mb-12">
+            <div class="section-header">
+                <h2 class="text-3xl font-extrabold text-blue-800">The Big Picture: Revenue & Policy</h2>
+            </div>
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <!-- Data Source Card -->
+                <div class="p-8 data-card text-center">
+                    <h3 class="text-xl font-bold text-gray-900 mb-4">Our Data Sources</h3>
+                    <p class="text-gray-600 mb-2">This report synthesizes data from:</p>
+                    <ul class="text-sm text-gray-700 space-y-1 font-semibold text-left mx-auto max-w-xs">
+                        <li>• World Health Organization (WHO)</li>
+                        <li>• World Bank & IMF reports</li>
+                        <li>• FIRS & NBS data</li>
+                        <li>• Market data (Dataphyte, NCD Alliance)</li>
+                    </ul>
+                </div>
+                <!-- SSB Revenue Potential Card -->
+                <div class="p-8 data-card text-center flex flex-col justify-center">
+                    <h3 class="text-xl font-bold text-gray-900 mb-4">SSB Revenue Potential (2022-2025)</h3>
+                    <p class="text-sm text-gray-600 mb-2">Estimated tax revenue from sugar-sweetened beverages.</p>
+                    <div class="text-4xl font-extrabold text-green-600">₦81 Billion</div>
+                    <p class="text-xs text-gray-400 mt-1">(vs. estimated ₦20bn in 2022)</p>
+                </div>
+                <!-- Tobacco Revenue Card -->
+                <div class="p-8 data-card text-center flex flex-col justify-center">
+                    <h3 class="text-xl font-bold text-gray-900 mb-4">Tobacco Revenue (2020)</h3>
+                    <p class="text-sm text-gray-600 mb-2">Estimated tax revenue from tobacco products.</p>
+                    <div class="text-4xl font-extrabold text-blue-600">₦55 Billion</div>
+                    <p class="text-xs text-gray-400 mt-1">($155.1 million)</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- --- Section 2: The Tobacco Tax Trend --- -->
+        <section class="mb-12">
+            <div class="section-header">
+                <h2 class="text-3xl font-extrabold text-blue-800">The Tobacco Tax Trend</h2>
+            </div>
+            <div class="grid grid-cols-1 lg:grid-cols-2 gap-8">
+                <!-- Tax Gap Visual -->
+                <div class="p-8 data-card">
+                    <h3 class="text-xl font-bold text-gray-900 mb-6">Closing the Tax Gap: Nigeria vs. WHO</h3>
+                    <p class="text-sm text-gray-600 mb-4">Nigeria's total tax burden on tobacco products is significantly below the WHO's recommended benchmark of 75%, limiting both revenue and public health benefits.</p>
+                    <div class="bg-gray-50 p-6 rounded-xl border border-gray-200 mb-6">
+                        <div class="flex justify-between items-center mb-2">
+                            <span class="text-lg font-semibold text-gray-700">Nigeria's Tax Burden</span>
+                            <span class="text-3xl font-extrabold text-blue-600">44%</span>
+                        </div>
+                        <div class="tax-bar-container">
+                            <div class="tax-bar-fill-blue" style="width: 44%;"></div>
+                        </div>
+                    </div>
+                    <div class="bg-gray-50 p-6 rounded-xl border border-gray-200">
+                        <div class="flex justify-between items-center mb-2">
+                            <span class="text-lg font-semibold text-gray-700">WHO Recommendation</span>
+                            <span class="text-3xl font-extrabold text-green-600">75%</span>
+                        </div>
+                        <div class="tax-bar-container">
+                            <div class="tax-bar-fill-green" style="width: 75%;"></div>
+                        </div>
+                    </div>
+                </div>
+                <!-- Tax Rate History Timeline -->
+                <div class="p-8 data-card">
+                    <h3 class="text-xl font-bold text-gray-900 mb-6">Evolution of Tobacco Tax Policy (2018-2024)</h3>
+                    <p class="text-sm text-gray-600 mb-4">A timeline of the phased increase in the specific tax rate on a pack of 20 cigarettes.</p>
+                    <div class="relative pl-6 border-l-2 border-blue-600 space-y-8">
+                        <div class="relative">
+                            <div class="absolute w-4 h-4 bg-blue-600 rounded-full -left-8 top-1"></div>
+                            <h4 class="font-bold text-gray-900">Pre-2018</h4>
+                            <p class="text-sm text-gray-600">Only a 20% ad valorem tax was applied.</p>
+                        </div>
+                        <div class="relative">
+                            <div class="absolute w-4 h-4 bg-blue-600 rounded-full -left-8 top-1"></div>
+                            <h4 class="font-bold text-gray-900">June 2018</h4>
+                            <p class="text-sm text-gray-600">Specific tax of ₦20 per pack introduced, alongside 20% ad valorem tax.</p>
+                        </div>
+                        <div class="relative">
+                            <div class="absolute w-4 h-4 bg-blue-600 rounded-full -left-8 top-1"></div>
+                            <h4 class="font-bold text-gray-900">2020</h4>
+                            <p class="text-sm text-gray-600">Specific tax increased to ₦58 per pack. Estimated revenue for the year was ₦55 billion.</p>
+                        </div>
+                        <div class="relative">
+                            <div class="absolute w-4 h-4 bg-blue-600 rounded-full -left-8 top-1"></div>
+                            <h4 class="font-bold text-gray-900">2022-2024</h4>
+                            <p class="text-sm text-gray-600">Specific tax raised to ₦84 per pack, with ad valorem increasing to 30%.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- --- Section 3: The Alcohol Tax Narrative --- -->
+        <section class="mb-12">
+            <div class="section-header">
+                <h2 class="text-3xl font-extrabold text-blue-800">The Alcohol Tax Narrative</h2>
+            </div>
+            <div class="grid grid-cols-1 lg:grid-cols-2 gap-8">
+                <!-- Revenue Potential Card -->
+                <div class="p-8 data-card text-center flex flex-col justify-center">
+                    <h3 class="text-xl font-bold text-gray-900 mb-4">Estimated Excise Revenue (2016)</h3>
+                    <p class="text-sm text-gray-600 mb-2">A 2016 World Bank report estimated excise revenue from alcohol under a revised tax structure.</p>
+                    <div class="text-4xl font-extrabold text-blue-600">₦312 Billion</div>
+                    <p class="text-xs text-gray-400 mt-1">This is an estimate, not actual revenue.</p>
+                </div>
+                <!-- Policy Changes Card -->
+                <div class="p-8 data-card">
+                    <h3 class="text-xl font-bold text-gray-900 mb-6">Key Policy Changes for Alcoholic Beverages</h3>
+                    <p class="text-sm text-gray-600 mb-4">The government has phased in specific tax increases to improve revenue generation and public health outcomes.</p>
+                    <div class="relative pl-6 border-l-2 border-blue-600 space-y-8">
+                        <div class="relative">
+                            <div class="absolute w-4 h-4 bg-blue-600 rounded-full -left-8 top-1"></div>
+                            <h4 class="font-bold text-gray-900">Pre-2018</h4>
+                            <p class="text-sm text-gray-600">Excise duties were based on a 20% ad valorem rate.</p>
+                        </div>
+                        <div class="relative">
+                            <div class="absolute w-4 h-4 bg-blue-600 rounded-full -left-8 top-1"></div>
+                            <h4 class="font-bold text-gray-900">2018-2021</h4>
+                            <p class="text-sm text-gray-600">Phased-in specific tax increases began, with rates varying by product type (e.g., beer, wine, spirits).</p>
+                        </div>
+                        <div class="relative">
+                            <div class="absolute w-4 h-4 bg-blue-600 rounded-full -left-8 top-1"></div>
+                            <h4 class="font-bold text-gray-900">2022</h4>
+                            <p class="text-sm text-gray-600">The specific tax on beer was raised to ₦40 per litre.</p>
+                        </div>
+                        <div class="relative">
+                            <div class="absolute w-4 h-4 bg-blue-600 rounded-full -left-8 top-1"></div>
+                            <h4 class="font-bold text-gray-900">2024</h4>
+                            <p class="text-sm text-gray-600">The specific tax on beer was raised to ₦100 per litre, continuing the trend of increasing specific duties.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- --- Section 4: The SSB Policy & Revenue --- -->
+        <section class="mb-12">
+            <div class="section-header">
+                <h2 class="text-3xl font-extrabold text-blue-800">The Sugar Tax Dilemma</h2>
+            </div>
+            <div class="grid grid-cols-1 lg:grid-cols-2 gap-8">
+                <!-- Price Impact Visual -->
+                <div class="p-8 data-card">
+                    <h3 class="text-xl font-bold text-gray-900 mb-6">Tax Rate vs. Price Impact</h3>
+                    <p class="text-sm text-gray-600 mb-4">The current SSB tax of ₦10/litre has a minimal impact on consumer pricing, unlike the WHO's recommended rate.</p>
+                    <div class="bg-gray-50 p-6 rounded-xl border border-gray-200 mb-6">
+                        <div class="flex justify-between font-semibold text-gray-700 mb-2">
+                            <span>Actual Price Increase (Current Tax)</span>
+                            <span>5%</span>
+                        </div>
+                        <div class="tax-bar-container">
+                            <div class="tax-bar-fill-blue" style="width: 5%;"></div>
+                        </div>
+                    </div>
+                    <div class="bg-gray-50 p-6 rounded-xl border border-gray-200">
+                        <div class="flex justify-between font-semibold text-gray-700 mb-2">
+                            <span>WHO Recommended Increase</span>
+                            <span>20%</span>
+                        </div>
+                        <div class="tax-bar-container">
+                            <div class="tax-bar-fill-green" style="width: 20%;"></div>
+                        </div>
+                    </div>
+                </div>
+                <!-- Revenue & Policy Card -->
+                <div class="p-8 data-card text-center flex flex-col justify-center">
+                    <h3 class="text-xl font-bold text-gray-900 mb-4">SSB Tax Revenue & Potential</h3>
+                    <p class="text-sm text-gray-600 mb-2">The tax, introduced in 2022, has shown revenue potential but remains low.</p>
+                    <div class="text-4xl font-extrabold text-blue-600">₦20 Billion</div>
+                    <p class="text-xs text-gray-400 mt-1">estimated revenue in 2022</p>
+                    <div class="mt-4">
+                        <p class="text-sm font-semibold text-green-600">Future Potential (2022-2025)</p>
+                        <p class="text-2xl font-bold text-green-700">Up to ₦81 Billion</p>
+                        <p class="text-xs text-gray-400">total estimated tax collection</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- --- Section 5: Combined Data Tables --- -->
+        <section class="mb-12">
+            <div class="section-header">
+                <h2 class="text-3xl font-extrabold text-blue-800">Combined Tax Rates & Revenue Data</h2>
+            </div>
+            <p class="text-gray-700 mb-8">
+                A consolidated view of the estimated excise tax revenue and policy rates across different product categories from 2015-2024.
+            </p>
+            <div class="table-container mb-8">
+                <h3 class="text-xl font-bold text-gray-900 mb-4">Table 1: Nigeria Excise Tax Revenue (Naira Billions)</h3>
+                <table class="min-w-full divide-y divide-gray-200 rounded-lg overflow-hidden shadow">
+                    <thead class="bg-gray-50">
+                        <tr>
+                            <th class="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider">Year</th>
+                            <th class="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider">Tobacco (Est.)</th>
+                            <th class="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider">Alcoholic Beverages (Est.)</th>
+                            <th class="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider">SSB (Est.)</th>
+                            <th class="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider">Notes</th>
+                        </tr>
+                    </thead>
+                    <tbody class="bg-white divide-y divide-gray-200">
+                        <tr class="hover:bg-gray-50">
+                            <td class="px-6 py-4 whitespace-nowrap text-sm font-medium text-gray-900">2015-2017</td>
+                            <td class="px-6 py-4 text-sm text-gray-500">N/A</td>
+                            <td class="px-6 py-4 text-sm text-gray-500">~N54bn* (2017)</td>
+                            <td class="px-6 py-4 text-sm text-gray-500">N/A</td>
+                            <td class="px-6 py-4 text-sm text-gray-500">*This figure for "Excise & Fees" is the most specific available.</td>
+                        </tr>
+                        <tr class="hover:bg-gray-50">
+                            <td class="px-6 py-4 whitespace-nowrap text-sm font-medium text-gray-900">2018-2019</td>
+                            <td class="px-6 py-4 text-sm text-gray-500">N/A</td>
+                            <td class="px-6 py-4 text-sm text-gray-500">N/A</td>
+                            <td class="px-6 py-4 text-sm text-gray-500">N/A</td>
+                            <td class="px-6 py-4 text-sm text-gray-500">Phased tax increase on tobacco & alcohol began in 2018.</td>
+                        </tr>
+                        <tr class="hover:bg-gray-50">
+                            <td class="px-6 py-4 whitespace-nowrap text-sm font-medium text-gray-900">2020</td>
+                            <td class="px-6 py-4 text-sm text-gray-500">~N55bn</td>
+                            <td class="px-6 py-4 text-sm text-gray-500">N/A</td>
+                            <td class="px-6 py-4 text-sm text-gray-500">N/A</td>
+                            <td class="px-6 py-4 text-sm text-gray-500">Revenue estimate from a public health report.</td>
+                        </tr>
+                        <tr class="hover:bg-gray-50">
+                            <td class="px-6 py-4 whitespace-nowrap text-sm font-medium text-gray-900">2022</td>
+                            <td class="px-6 py-4 text-sm text-gray-500">N/A</td>
+                            <td class="px-6 py-4 text-sm text-gray-500">N/A</td>
+                            <td class="px-6 py-4 text-sm text-gray-500">~N20bn</td>
+                            <td class="px-6 py-4 text-sm text-gray-500">SSB tax of ₦10/litre became effective.</td>
+                        </tr>
+                        <tr class="hover:bg-gray-50">
+                            <td class="px-6 py-4 whitespace-nowrap text-sm font-medium text-gray-900">2023-2024</td>
+                            <td class="px-6 py-4 text-sm text-gray-500">N/A</td>
+                            <td class="px-6 py-4 text-sm text-gray-500">N/A</td>
+                            <td class="px-6 py-4 text-sm text-gray-500">N/A</td>
+                            <td class="px-6 py-4 text-sm text-gray-500">Overall non-oil revenue shows a positive trend.</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+
+            <div class="table-container">
+                <h3 class="text-xl font-bold text-gray-900 mb-4">Table 2: Nigeria Excise Tax Rates (2015-2024)</h3>
+                <table class="min-w-full divide-y divide-gray-200 rounded-lg overflow-hidden shadow">
+                    <thead class="bg-gray-50">
+                        <tr>
+                            <th class="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider">Year</th>
+                            <th class="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider">Tobacco</th>
+                            <th class="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider">Alcoholic Beverages</th>
+                            <th class="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider">SSB</th>
+                        </tr>
+                    </thead>
+                    <tbody class="bg-white divide-y divide-gray-200">
+                        <tr class="hover:bg-gray-50">
+                            <td class="px-6 py-4 whitespace-nowrap text-sm font-medium text-gray-900">2015-2017</td>
+                            <td class="px-6 py-4 text-sm text-gray-500">20% ad valorem</td>
+                            <td class="px-6 py-4 text-sm text-gray-500">20% ad valorem</td>
+                            <td class="px-6 py-4 text-sm text-gray-500">No excise tax</td>
+                        </tr>
+                        <tr class="hover:bg-gray-50">
+                            <td class="px-6 py-4 whitespace-nowrap text-sm font-medium text-gray-900">2018 (from June)</td>
+                            <td class="px-6 py-4 text-sm text-gray-500">₦20/pack + 20% ad valorem</td>
+                            <td class="px-6 py-4 text-sm text-gray-500">Varies (e.g., ₦0.30k/Cl for Beer)</td>
+                            <td class="px-6 py-4 text-sm text-gray-500">No excise tax</td>
+                        </tr>
+                        <tr class="hover:bg-gray-50">
+                            <td class="px-6 py-4 whitespace-nowrap text-sm font-medium text-gray-900">2022</td>
+                            <td class="px-6 py-4 text-sm text-gray-500">₦84/pack + 30% ad valorem</td>
+                            <td class="px-6 py-4 text-sm text-gray-500">Varies (e.g., ₦40/litre for Beer)</td>
+                            <td class="px-6 py-4 text-sm text-gray-500">₦10/litre</td>
+                        </tr>
+                        <tr class="hover:bg-gray-50">
+                            <td class="px-6 py-4 whitespace-nowrap text-sm font-medium text-gray-900">2024</td>
+                            <td class="px-6 py-4 text-sm text-gray-500">₦84/pack + 30% ad valorem</td>
+                            <td class="px-6 py-4 text-sm text-gray-500">Varies (e.g., ₦100/litre for Beer)</td>
+                            <td class="px-6 py-4 text-sm text-gray-500">₦10/litre</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </section>
+
+        <!-- --- Section 6: Conclusion & Outlook --- -->
+        <section class="mb-12">
+            <div class="section-header">
+                <h2 class="text-3xl font-extrabold text-blue-800">Conclusion & Outlook</h2>
+            </div>
+            <div class="grid grid-cols-1 lg:grid-cols-2 gap-8">
+                <div class="p-8 data-card">
+                    <h3 class="text-xl font-bold text-gray-900 mb-4">Key Insights</h3>
+                    <ul class="text-sm text-gray-700 list-disc list-inside space-y-3">
+                        <li>Nigeria's excise tax policies have seen a shift from ad valorem to a <strong class="font-semibold text-blue-600">mixed tax system</strong> with specific duties to better capture revenue and manage public health.</li>
+                        <li>Specific revenue data is challenging to find, but reports point to an estimated <strong class="font-semibold text-blue-600">₦55 billion from tobacco in 2020</strong> and an estimated <strong class="font-semibold text-blue-600">₦20 billion from SSBs in 2022.</strong></li>
+                        <li>The alcohol tax policy, while lacking specific revenue data, shows a clear trend of <strong class="font-semibold text-blue-600">increasing specific tax rates</strong>, and a 2016 World Bank report estimated a potential excise revenue of <strong class="font-semibold text-blue-600">₦312 billion</strong>.</li>
+                        <li>Across all categories, there is still significant potential to increase revenue and improve health outcomes by <strong class="font-semibold text-blue-600">aligning tax rates with international benchmarks.</strong></li>
+                    </ul>
+                </div>
+                <div class="p-8 data-card">
+                    <h3 class="text-xl font-bold text-gray-900 mb-4">Future Potential</h3>
+                    <p class="text-gray-700">
+                        To optimize the impact of excise taxes, future policy reforms should consider:
+                    </p>
+                    <ul class="text-sm text-gray-700 list-disc list-inside mt-4 space-y-3">
+                        <li><strong class="font-semibold text-blue-600">Adopting inflation-adjusted rates</strong> for specific duties.</li>
+                        <li><strong class="font-semibold text-blue-600">Expanding the tax base</strong> to include new products like e-cigarettes.</li>
+                        <li>Investing the generated revenue into <strong class="font-semibold text-blue-600">dedicated public health programs.</strong></li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+    </div>
+</body>
+</html>
